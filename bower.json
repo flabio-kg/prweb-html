@@ -1,0 +1,25 @@
+{
+  "name": "prweb-html",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "owl-carousel": "^1.3.2",
+    "font-awesome": "^4.7.0",
+    "magnific-popup": "^1.1.0",
+    "jQuery.mmenu": "^6.1.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2"
+  }
+}
