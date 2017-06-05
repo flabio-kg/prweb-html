@@ -1,0 +1,195 @@
+.footer {
+  padding: 20px 0 25px;
+  background-color: rgb(43, 42, 41);
+  width: 100%;
+  max-width: 100%;
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 0;
+  }
+
+  &__information {
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding-bottom: 20px;
+    }
+
+    &--caption {
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 0 15px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 7px;
+
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 20px;
+          color: #fff;
+          font-weight: 300;
+          transition: all 0.3s;
+
+          &:hover {
+            color: #09afdf;
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    padding: 0 20px;
+    @media (max-width: $screen-sm-max) {
+      padding: 30px 0 0;
+    }
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+      padding: 30px 50px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__social {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+    @media (max-width: $screen-md-max) {
+      padding: 20px 0 15px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: #2e3537;
+        margin-left: 10px;
+        line-height: 35px;
+        transition: all 0.5s;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          text-align: center;
+          transition: all 0.3s;
+          width: 100%;
+          min-width: 100%;
+
+          i {
+            color: #a0a0a0;
+            padding: 9px 7px;
+            transition: all 0.3s;
+            font-size: 16px;
+
+            &:hover {
+              color: #09afdf;
+              transform: rotate(360deg);
+              font-size: 24px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+    padding-left: 97px;
+    @media (max-width: $screen-md-max) {
+      padding-left: 130px;
+    }
+    @media (max-width: $screen-sm-max) {
+      padding: 0;
+    }
+
+    &--caption {
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+      padding: 0 0 15px;
+    }
+
+    ul {
+      margin: 0;
+      @media (max-width: $screen-sm-max) {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 300;
+        position: relative;
+        padding-bottom: 8px;
+        @media (max-width: $screen-xs-max) {
+          padding-left: 15px;
+        }
+        @media (max-width: $screen-md-max) {
+          font-size: 13px;
+        }
+
+        i {
+          position: absolute;
+          left: -35px;
+          top: 10%;
+          transform: translateX(-10%);
+          @media (max-width: $screen-sm-max) {
+            left: 0;
+          }
+          @media (max-width: $screen-xs-min) {
+            left: 0;
+          }
+          @media screen and (min-width: 700px) and (max-width: 767px) {
+            left: 20%;
+            transform: translateX(-20%);
+          }
+        }
+      }
+    }
+  }
+}
