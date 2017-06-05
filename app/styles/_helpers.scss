@@ -1,4 +1,4 @@
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
 }
@@ -22,8 +22,42 @@ body{
 }
 
 &:after,
-&:before{
+&:before {
   content: '';
+}
+
+.title__headline {
+  position: relative;
+  text-align: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    border-bottom: 3px #09afdf solid;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    top: 0;
+    bottom: 10px;
+    max-width: 100%;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+    color: #09afdf;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-style: italic;
+  }
 }
 
 .mm-title {
@@ -35,7 +69,6 @@ body{
 .mm-right.mm-opening .mm-menu.mm-fx-menu-slide {
   z-index: 999999;
 }
-
 @-webkit-keyframes inM {
   50% {
     -webkit-transform: rotate(0deg);
