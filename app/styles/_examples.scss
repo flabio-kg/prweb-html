@@ -1,0 +1,66 @@
+.examples {
+  min-height: 625px;
+  padding: 45px 0 25px;
+
+  &__topline {
+    padding-bottom: 40px;
+  }
+
+  &__owl-carousel {
+    .owl-nav {
+      .owl-prev {
+        color: #95989a;
+        font-size: 30px;
+        position: absolute;
+        right: 90px;
+        bottom: 20px;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        border-radius: 10em;
+
+        &:hover {
+          opacity: 0.6;
+        }
+        @media (max-width: $screen-xs-max) {
+          font-size: 20px;
+          width: 20px;
+          line-height: 20px;
+          height: 20px;
+          right: 40px;
+          bottom: 30px;
+        }
+      }
+
+      .owl-next {
+        color: #95989a;
+        font-size: 30px;
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        border-radius: 10em;
+
+        &:hover {
+          opacity: 0.6;
+        }
+        @media (max-width: $screen-xs-max) {
+          font-size: 20px;
+          width: 20px;
+          line-height: 20px;
+          height: 20px;
+          right: 10px;
+          bottom: 30px;
+        }
+      }
+    }
+  }
+}
