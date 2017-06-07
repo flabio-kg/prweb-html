@@ -1,0 +1,246 @@
+.calculator{
+	.title__headline{
+		margin-bottom: 20px;
+	}
+	&__content{
+		position: relative;
+		.cart_block{
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0px 1px 8.04px 3.96px rgba(0, 0, 0, 0.17);
+			max-width: 100%;
+			width: 100%;
+			height: 366px;
+			text-align: center;
+			padding: 30px;
+			margin-top: 20px;
+			.h2{
+				font-size: 20px;
+				color: #2e3537;
+				font-weight: 600;
+				padding-bottom: 18px;
+				margin: 0;
+			}
+			.-forms{
+				input{
+					margin-top: 12px;
+					max-width: 100%;
+					width: 100%;
+					border: 1px #e9e9e9 solid;
+					height: 30px;
+					line-height: 30px;
+					padding-left: 7px;
+				}
+			}
+			a{
+				text-decoration: none;
+			}
+			.collor_h2{
+				font-size: 38px;
+				color: #2e3537;
+				font-weight: 600;
+			}
+			.button{
+				margin-top: 10px;
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				font-weight: 400;
+				text-transform: uppercase;
+				max-width: 100%;
+				width: 100%;
+				font-size: 16px;
+				color: #fff;
+				text-decoration: none;
+				outline: none;
+				border: 1px transparent solid;
+				background-color: #09afdf;
+				transition: all 0.3s;
+
+				&:hover {
+					border: 1px #09afdf solid;
+					background-color: transparent;
+					color: #09afdf;
+					text-decoration: none;
+				}
+			}
+		}
+		.group_checkbox_good,
+		.group_radio_goods{
+			position: relative;
+			z-index: 99;
+		}
+		.group_text_goods{
+			form{
+				.form-control {
+					display: inline-block;
+					width: 30px;
+					height: 20px;
+					padding: 0;
+					text-align: center;
+					font-size: 14px;
+					line-height: 1.428571429;
+					color: #555555;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					border-radius: 2px;
+					box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+					transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+				}
+			}
+		}
+		h3{
+			font-size: 16px;
+			color: #2e3537;
+			font-weight: 600;
+			display: inline-block;
+		}
+
+		.tooltip-info {
+			color: #09afdf;
+			font-weight: 600;
+			padding-left: 10px;
+			outline: none;
+			cursor: help;
+			text-decoration: none;
+			position: relative;
+			text-align: center;
+			.custom{
+				padding-bottom: 5px;
+			}
+			span {
+				color: #2e3537;
+				font-weight: 400;
+				font-size: 13px;
+				position: absolute;
+				margin-left: -999em;
+				.question{
+					font-weight: 400;
+					text-align: center;
+					background-color: #09afdf;
+					color: #fff;
+					font-size: 14px;
+					margin: 0;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					margin-bottom: 5px;
+				}
+				.calc-info{
+					text-align: center;
+					font-weight: 600;
+					margin: 0;
+				}
+			}
+			&:hover {
+				span {
+					box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+					background-color: #fff;
+					font-family: ofont-ru-open-sans-light, sans-serif;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: 2em;
+					z-index: 999;
+					margin-left: 0;
+					width: 195px;
+					text-decoration: none;					
+				}
+			}
+		}
+
+		.radio {
+			vertical-align: top;
+			width: 17px;
+			height: 17px;
+			margin: 0 3px 0 0;
+			+ label {
+				cursor: pointer;
+			}
+			&:not(checked) {
+				position: absolute;
+				opacity: 0;
+				+ label {
+					position: relative;
+					padding: 0px 0px 0 35px;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 3px;
+						left: 10px;
+						width: 16px;
+						height: 16px;
+						border: 1px solid #CDD1DA;
+						border-radius: 50%;
+						background: #FFF;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						top: 6px;
+						left: 13px;
+						width: 10px;
+						height: 10px;
+						border-radius: 50%;
+						background: #09afdf;
+						box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+						opacity: 0;
+						transition: all .2s;
+					}
+				}
+			}
+			&:checked + label:after {
+				opacity: 1;
+			}
+		}
+
+		form{
+			.checkbox {
+				vertical-align: top;
+				margin: 0 3px 0 0;
+				width: 17px;
+				height: 17px;
+				+ label {
+					cursor: pointer;
+				}
+				&:not(checked) {
+					position: absolute;
+					opacity: 0;
+					+ label {
+						position: relative;
+						padding: 0 0 0 40px;
+						&:before {
+							content: '';
+							position: absolute;
+							top: 3px;
+							left: 10px;
+							width: 16px;
+							height: 16px;
+							background: transparent;
+							border: 1px solid #CDD1DA;
+						}
+					}
+				}
+				&:checked + label {
+					&:before {
+						content: '\f00c';
+						font-family: 'FontAwesome';
+						text-align: center;
+						position: absolute;
+						color: #09afdf;
+						font-size: 13px;
+						line-height: 16px;
+						background-color: transparent;
+						box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+						transition: all .2s;
+					}
+				}			
+			}
+			label {
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: 400;
+				color: #2e3537;
+			}
+		}
+
+	}
+}

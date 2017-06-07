@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 .-btn {
@@ -10,7 +10,7 @@ body {
   border: 1px #09afdf solid;
   background-color: transparent;
   font-size: 16px;
-  color: #09afdf;
+  color: #fff;
   text-decoration: none;
   outline: none;
   transition: all 0.3s;
@@ -60,6 +60,9 @@ body {
     padding-left: 15px;
     text-transform: uppercase;
     font-style: italic;
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+    }
   }
 }
 
